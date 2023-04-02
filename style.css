@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    background: url("./images/pattern-background-desktop.svg") no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    background-color: hsl(225, 100%, 94%);
+}
+
+@media screen and (max-width: 375px) {
+   body{
+    background: url("./images/pattern-background-mobile.svg") no-repeat;
+   } 
+}
+
+main{
+    background-color: white;
+    border-radius: 1.5em;
+    max-width: 375px;    
+}
+
+.heading{
+    width: 100%;
+    border-radius: 1.5em 1.5em 0 0;
+}
+
+h1{
+    font-size: 2rem;
+    margin: 0.3em;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    
+}
+
+.info{
+    max-width: 20em;
+    padding: 0;
+    margin: 0 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(224, 23%, 55%);
+}
+
+.price-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    background-color: hsl(225, 100%, 98%);
+    margin: 1.5em;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.price-details::before{
+    position: absolute;
+    content: "";
+    background: url('./images/icon-music.svg') no-repeat;
+    width: 100px;
+    height: 100px;
+    top: 10px;
+    left: 5px;
+    z-index: 2;
+}
+
+.price-details img{
+    float: left;
+}
+
+.price-details a:hover{
+    cursor: pointer;
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+
+.plan p{
+    font-weight: 700;
+}
+
+.price-details span, .cancel-order{
+    font-weight: 400;
+    color: hsl(224, 23%, 55%);
+}
+
+.btn{
+    background-color: hsl(245, 75%, 52%);
+    font-weight: bold;
+    color: white;
+    border-radius: 1em;
+    padding: 1em;
+    width: 15em;
+    margin: 0 3em;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.btn:hover{
+    background: linear-gradient(to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%));;
+    cursor: pointer;
+}
+
+.cancel-order{
+    margin: 1.5em;
+    font-weight: bold;
+}
+
+.cancel-order:hover{
+    color: black;
+    cursor: pointer;
+}
